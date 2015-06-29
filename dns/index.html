@@ -22,7 +22,7 @@
   width: 800px;
   height: 600px;
   overflow: hidden;
-  margin: 80px auto 0 auto;
+  margin: 60px auto 0 auto;
   padding: 30px;
 
   font-weight: 200;
@@ -79,7 +79,7 @@
 }
 
 p{
-	margin-bottom:22px;
+	margin-bottom:10px;
 }
 
 h1 {
@@ -106,10 +106,10 @@ h3 {
 }
 
 ul {
-  padding: 20px 0 0 60px;
+  padding: 10px 0 0 60px;
   font-weight: 200;
   line-height: 1.375;
-  margin:20px;
+  margin:10px;
 }
 
 .author h1 {
@@ -540,10 +540,8 @@ ul{
 $TTL 1h                  ; default expiration time of all resource records without their own TTL value
 example.com.  IN  SOA   ns.example.com. username.example.com. ( 2007120710 1d 2h 4w 1h )
 example.com.  IN  NS    ns                    ; ns.example.com is a nameserver for example.com
-example.com.  IN  NS    ns.somewhere.example. ; ns.somewhere.example is a backup nameserver for example.com
 example.com.  IN  MX    10 mail.example.com.  ; mail.example.com is the mailserver for example.com
 @             IN  MX    20 mail2.example.com. ; equivalent to above line, &quot;@&quot; represents zone origin
-@             IN  MX    50 mail3              ; equivalent to above line, but using a relative host name
 example.com.  IN  A     192.0.2.1             ; IPv4 address for example.com
               IN  AAAA  2001:db8:10::1        ; IPv6 address for example.com
 ns            IN  A     192.0.2.2             ; IPv4 address for ns.example.com
